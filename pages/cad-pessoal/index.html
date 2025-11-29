@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ficha Cadastral | Café Gomes Claraval</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Café <span>Gomes Claraval</span></h1>
+      <p class="subtitle">Registro de Perfil e Dados Pessoais</p>
+    </header>
+
+    <form class="card" autocomplete="off">
+      
+      <fieldset>
+        <legend>Identificação Civil</legend>
+        <div class="row">
+          <div class="field"><label for="nome">Nome Completo</label><input id="nome" type="text" placeholder="Conforme documento" required /></div>
+          <div class="field small"><label for="cpf">CPF</label><input id="cpf" type="text" placeholder="000.000.000-00" /></div>
+          <div class="field small"><label for="rg">RG / RNE</label><input id="rg" type="text" placeholder="Registro Geral" /></div>
+          <div class="field small"><label for="nasc">Data de Nascimento</label><input id="nasc" type="date" /></div>
+        </div>
+        
+        <div class="row">
+          <div class="field"><label for="mae">Nome da Mãe</label><input id="mae" type="text" placeholder="Filiação materna" /></div>
+          <div class="field small"><label for="est-civil">Estado Civil</label>
+            <select id="est-civil">
+                <option>Solteiro(a)</option>
+                <option>Casado(a)</option>
+                <option>Divorciado(a)</option>
+                <option>Viúvo(a)</option>
+                <option>União Estável</option>
+            </select>
+          </div>
+          <div class="field small"><label for="nacionalidade">Nacionalidade</label><input id="nacionalidade" type="text" placeholder="Brasileiro(a)" /></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato e Ocupação</legend>
+        <div class="row">
+          <div class="field"><label for="email">E-mail Principal</label><input id="email" type="email" placeholder="usuario@email.com" /></div>
+          <div class="field small"><label for="celular">Celular / Whatsapp</label><input id="celular" type="text" placeholder="(00) 90000-0000" /></div>
+          <div class="field small"><label for="fixo">Telefone Fixo</label><input id="fixo" type="text" placeholder="(00) 0000-0000" /></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="profissao">Profissão Atual</label><input id="profissao" type="text" placeholder="Cargo / Função" /></div>
+          <div class="field small"><label for="empresa">Empresa</label><input id="empresa" type="text" placeholder="Onde trabalha atualmente" /></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Segurança da Conta</legend>
+        <div class="row">
+          <div class="field small"><label for="login">Nome de Usuário</label><input id="login" type="text" placeholder="user.name" /></div>
+          
+          <div class="field small"><label for="senha">Criar Senha</label><input id="senha" type="password" placeholder="********" /></div>
+          <div class="field small"><label for="conf-senha">Confirmar Senha</label><input id="conf-senha" type="password" placeholder="********" /></div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
+        <button type="submit" class="btn btn-primary">Salvar Cadastro</button>
+      </div>
+    </form>
+
+    <footer class="footer">&copy; 2025 - Café Gomes Claraval | Departamento Pessoal.</footer>
+  </main>
+</body>
+</html>

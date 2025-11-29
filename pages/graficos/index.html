@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Notas | Café Gomes Claraval</title>
+
+    <link rel="stylesheet" href="estilo-dashboard.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1>Café <span>Gomes Claraval</span></h1>
+            <p class="subtitle">Análise de Desempenho Acadêmico - 1º Bimestre</p>
+        </header>
+
+        <section class="dashboard-grid">
+            
+            <div class="chart-card">
+                <h2>Notas por Disciplina</h2>
+                <div class="chart-container">
+                    <canvas id="graficoBarrasVerticais"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>Aproveitamento (%)</h2>
+                <div class="chart-container">
+                    <canvas id="graficoBarrasHorizontais"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>Evolução (Linha)</h2>
+                <div class="chart-container">
+                    <canvas id="graficoLinha"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h2>Distribuição</h2>
+                <div class="chart-container">
+                    <canvas id="graficoPizza"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card large-card">
+                <h2>Radar de Competências</h2>
+                <div class="chart-container">
+                    <canvas id="graficoRadar"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">&copy; 2025 - Café Gomes Claraval | Área do Aluno.</footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script-dashboard.js"></script>
+</body>
+</html>

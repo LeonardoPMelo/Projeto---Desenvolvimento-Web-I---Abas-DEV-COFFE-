@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro Postal | Café Gomes Claraval</title>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Logística <span>Gomes Claraval</span></h1>
+      <p class="subtitle">Sistema de Despacho e Controle Postal</p>
+    </header>
+
+    <form class="card" autocomplete="off">
+      
+      <fieldset>
+        <legend>Dados do Remetente</legend>
+        <div class="row">
+          <div class="field"><label for="rem-nome">Nome Completo</label><input id="rem-nome" type="text" placeholder="Nome de quem envia" required /></div>
+          <div class="field small"><label for="rem-cep">CEP de Origem</label><input id="rem-cep" type="text" placeholder="00000-000" /></div>
+          <div class="field small"><label for="rem-cidade">Cidade</label><input id="rem-cidade" type="text" /></div>
+          <div class="field small"><label for="rem-uf">UF</label><input id="rem-uf" type="text" maxlength="2" placeholder="SP" /></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="rem-end">Endereço de Coleta</label><input id="rem-end" type="text" placeholder="Rua, número e complemento" /></div>
+          <div class="field small"><label for="rem-doc">CPF/CNPJ</label><input id="rem-doc" type="text" /></div>
+          <div class="field small"><label for="rem-tel">Telefone</label><input id="rem-tel" type="text" placeholder="(00) 00000-0000" /></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados do Destinatário</legend>
+        <div class="row">
+          <div class="field"><label for="dest-nome">Nome do Destinatário</label><input id="dest-nome" type="text" placeholder="Quem receberá o pacote" required /></div>
+          <div class="field small"><label for="dest-cep">CEP de Destino</label><input id="dest-cep" type="text" placeholder="00000-000" /></div>
+          <div class="field small"><label for="dest-cidade">Cidade</label><input id="dest-cidade" type="text" /></div>
+          <div class="field small"><label for="dest-uf">UF</label><input id="dest-uf" type="text" maxlength="2" /></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="dest-end">Endereço de Entrega</label><input id="dest-end" type="text" placeholder="Rua, número e complemento" /></div>
+          <div class="field small"><label for="dest-ref">Ponto de Referência</label><input id="dest-ref" type="text" /></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Especificações do Pacote</legend>
+        <div class="row">
+          <div class="field"><label for="tipo">Tipo de Embalagem</label>
+            <select id="tipo">
+                <option>Caixa Padrão</option>
+                <option>Envelope</option>
+                <option>Tubo / Rolo</option>
+                <option>Palete</option>
+            </select>
+          </div>
+          <div class="field small"><label for="peso">Peso (Kg)</label><input id="peso" type="number" step="0.1" placeholder="0.00" /></div>
+          <div class="field small"><label for="conteudo">Declaração de Conteúdo</label><input id="conteudo" type="text" placeholder="Ex: Grãos de Café" /></div>
+        </div>
+
+        <div class="row">
+          <div class="field small"><label for="altura">Altura (cm)</label><input id="altura" type="number" placeholder="0 cm" /></div>
+          <div class="field small"><label for="largura">Largura (cm)</label><input id="largura" type="number" placeholder="0 cm" /></div>
+          <div class="field small"><label for="profundidade">Comprimento (cm)</label><input id="profundidade" type="number" placeholder="0 cm" /></div>
+          <div class="field small"><label for="seguro">Valor Assegurado (R$)</label><input id="seguro" type="text" placeholder="R$ 0,00" /></div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="button" class="btn btn-secondary" onclick="window.history.back()">Voltar</button>
+        <button type="submit" class="btn btn-primary">Gerar Etiqueta</button>
+      </div>
+    </form>
+
+    <footer class="footer">&copy; 2025 - Logística Gomes Claraval | Rastreamento Global.</footer>
+  </main>
+</body>
+</html>

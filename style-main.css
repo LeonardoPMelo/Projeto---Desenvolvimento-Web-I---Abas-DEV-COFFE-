@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --accent-color: #d3ad7f;
+  --accent-hover: #e3b889;
+  --text-color: #f0f0f0;
+  --muted-color: #a0a0a0;
+  --bg-dark: #050507;
+
+  --glass-bg: rgba(20, 20, 25, 0.9);
+  --border-color: rgba(211, 173, 127, 0.3);
+
+  --font-title: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.sidebar {
+  width: 280px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 100;
+  transition: var(--transition);
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.logo-area {
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 10px;
+}
+
+.logo-area i {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(211, 173, 127, 0.4);
+}
+
+.logo-area h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.logo-area h2 span {
+  color: var(--accent-color);
+}
+
+.sidebar ul {
+  list-style: none;
+  overflow-y: auto;
+  flex: 1;
+  padding: 10px 0;
+}
+
+.sidebar ul::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar ul::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 3px;
+}
+
+.sidebar li {
+  padding: 18px 30px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  color: var(--muted-color);
+  display: flex;
+  align-items: center;
+  border-left: 4px solid transparent;
+  position: relative;
+}
+
+.sidebar li i {
+  margin-right: 15px;
+  width: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+/* Estados: Hover e Active */
+.sidebar li:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sidebar li.active {
+  color: var(--accent-color);
+  background: linear-gradient(90deg, rgba(211, 173, 127, 0.15), transparent);
+  border-left: 4px solid var(--accent-color);
+}
+
+.sidebar li.active i {
+  transform: scale(1.1);
+  text-shadow: 0 0 8px var(--accent-color);
+}
+
+.content-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    border-right: none;
+    border-top: 1px solid var(--border-color);
+    order: 2;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .logo-area {
+    display: none;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .sidebar li {
+    padding: 12px 10px;
+    border-left: none;
+    border-top: 3px solid transparent;
+    flex-direction: column;
+    font-size: 0.7rem;
+    justify-content: center;
+    flex: 1;
+    min-width: 70px;
+  }
+
+  .sidebar li i {
+    margin: 0 0 6px 0;
+    font-size: 1.2rem;
+  }
+
+  .sidebar li.active {
+    border-left: none;
+    border-top: 3px solid var(--accent-color);
+    background: linear-gradient(180deg, rgba(211, 173, 127, 0.15), transparent);
+  }
+}

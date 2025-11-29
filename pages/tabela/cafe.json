@@ -1,0 +1,44 @@
+[
+  {
+    "tipo": "Grão Arábica (Premiado)",
+    "torra": "Média",
+    "origem": "Claraval - MG",
+    "preco": "42.50",
+    "descricao": "Sabor equilibrado com notas de chocolate e frutas cítricas. Vencedor do concurso local."
+  },
+  {
+    "tipo": "Clássico da Fazenda",
+    "torra": "Escura",
+    "origem": "Claraval - MG",
+    "preco": "35.00",
+    "descricao": "Intenso e encorpado, perfeito para o café da manhã. A tradição da nossa família."
+  },
+  {
+    "tipo": "Grão Bourbon Amarelo",
+    "torra": "Média Clara",
+    "origem": "Sul de Minas",
+    "preco": "45.00",
+    "descricao": "Aroma floral e finalização prolongada. Uma experiência única para paladares exigentes."
+  },
+  {
+    "tipo": "Orgânico da Canastra",
+    "torra": "Média",
+    "origem": "Serra da Canastra - MG",
+    "preco": "48.00",
+    "descricao": "Cultivado de forma sustentável, com sabor limpo, natural e notas de melaço."
+  },
+  {
+    "tipo": "Café Moído Intenso",
+    "torra": "Escura",
+    "origem": "Claraval - MG",
+    "preco": "32.00",
+    "descricao": "Prático para o dia a dia, com a força e o sabor marcante do nosso terroir."
+  },
+  {
+    "tipo": "Microlote Flor de Café",
+    "torra": "Clara",
+    "origem": "Claraval - MG",
+    "preco": "55.00",
+    "descricao": "Edição limitada. Notas exóticas de jasmim e uma acidez brilhante e delicada."
+  }
+]

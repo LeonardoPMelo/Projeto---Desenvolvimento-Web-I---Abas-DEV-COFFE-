@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Aplicações | Café Gomes Claraval</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style-main.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-area">
+            <i class="fas fa-mug-hot"></i>
+            <h2>Dev <span>Coffe</span></h2>
+        </div>
+        
+        <ul id="menu-lista">
+            <li class="active" onclick="carregarPagina('pages/abertura/index.html', this)">
+                <i class="fas fa-home"></i> Portfólio
+            </li>
+
+             <li onclick="carregarPagina('pages/landpage/index.html', this)">
+                <i class="fas fa-seedling"></i> Café Gomes Claraval
+            </li>
+            
+            <li onclick="carregarPagina('pages/tabela/index.html', this)">
+                <i class="fas fa-list-alt"></i> Tabela de Preços
+            </li>
+
+            <li onclick="carregarPagina('pages/carrossel/index.html', this)">
+                <i class="fas fa-images"></i> Nossos Produtos
+            </li>
+            
+            <li onclick="carregarPagina('pages/graficos/index.html', this)">
+                <i class="fas fa-chart-pie"></i> Indicadores (BI)
+            </li>
+
+            <li onclick="carregarPagina('pages/cad-estudantil/index.html', this)">
+                <i class="fas fa-user-graduate"></i> Cad. Estudante
+            </li>
+            
+            <li onclick="carregarPagina('pages/cad-pessoal/index.html', this)">
+                <i class="fas fa-id-card"></i> Cad. Pessoal
+            </li>
+            
+            <li onclick="carregarPagina('pages/cadastro-postal/index.html', this)">
+                <i class="fas fa-shipping-fast"></i> Cad. Logística
+            </li>
+
+            <li onclick="carregarPagina('pages/localizacao/index.html', this)">
+                <i class="fas fa-map-marked-alt"></i> Localização
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content-area">
+        <iframe id="main-frame" name="conteudo" src="pages/abertura/index.html" title="Área de Conteúdo"></iframe>
+    </main>
+
+    <script src="script-main.js"></script>
+</body>
+</html>

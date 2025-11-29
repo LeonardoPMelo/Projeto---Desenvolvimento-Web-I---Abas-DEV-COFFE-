@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cafés | Café Gomes Claraval</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+        
+        <header class="header">
+            <h1>Café <span>Gomes Claraval</span></h1>
+            <p class="subtitle">Nossos Grãos Especiais e Selecionados</p>
+        </header>
+
+        <section class="card">
+            
+            <div class="controls-container">
+                <input type="text" id="filtro-nome" placeholder="Buscar por tipo de café...">
+                <button id="btn-limpar" class="btn btn-secondary">Limpar Busca</button>
+            </div>
+
+            <div class="table-wrapper">
+                <table id="tabela-cafes">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Torra</th>
+                            <th>Origem</th>
+                            <th id="sort-preco" class="sortable" title="Clique para ordenar">Preço (R$) <span style="font-size:0.8em">⇅</span></th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-tabela"></tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <footer class="footer">&copy; 2025 - Café Gomes Claraval | Vendas Diretas.</footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
