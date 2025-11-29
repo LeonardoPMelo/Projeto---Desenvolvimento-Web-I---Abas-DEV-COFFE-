@@ -81,7 +81,7 @@ Formulários completos com validação visual e design responsivo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+    git clone [https://github.com/LeonardoPMelo/Projeto---Desenvolvimento-Web-I---Abas-DEV-COFFE-.git]([https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/LeonardoPMelo/Projeto---Desenvolvimento-Web-I---Abas-DEV-COFFE-.git)
     ```
 
 2.  **Abra a pasta do projeto:**
@@ -109,7 +109,7 @@ O projeto foi construído com foco na experiência do usuário (UX) e interface 
 * Analista de PCP II
 * Estudante de Desenvolvimento de Software & Ciência de Dados | **Fatec Franca**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](SEU-LINK-DO-LINKEDIN-AQUI)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/leonardo-pessoa-de-melo-36467527b)
 
 ---
 
