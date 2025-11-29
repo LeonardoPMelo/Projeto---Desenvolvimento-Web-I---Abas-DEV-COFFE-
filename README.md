@@ -77,22 +77,6 @@ Formulários completos com validação visual e design responsivo:
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/LeonardoPMelo/Projeto---Desenvolvimento-Web-I---Abas-DEV-COFFE-.git]([https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/LeonardoPMelo/Projeto---Desenvolvimento-Web-I---Abas-DEV-COFFE-.git)
-    ```
-
-2.  **Abra a pasta do projeto:**
-    Navegue até o diretório onde os arquivos foram clonados.
-
-3.  **Execute:**
-    Basta abrir o arquivo `index.html` (o que está na raiz) em qualquer navegador moderno.
-    *Dica: Para uma melhor experiência, utilize a extensão "Live Server" do VS Code.*
-
----
-
 ## 🎨 Layout e Design
 
 O projeto foi construído com foco na experiência do usuário (UX) e interface do usuário (UI), destacando:
@@ -109,8 +93,7 @@ O projeto foi construído com foco na experiência do usuário (UX) e interface 
 * Analista de PCP II
 * Estudante de Desenvolvimento de Software & Ciência de Dados | **Fatec Franca**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/leonardo-pessoa-de-melo-36467527b)
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-pessoa-de-melo-36467527b)
 ---
 
 Desenvolvido com ☕ e código.
